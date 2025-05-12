@@ -1,3 +1,11 @@
 [build]
   publish = ".next"
   command = "npm run build"
+
+[[edge_functions]]
+  path = "/api/hello"
+  function = "hello-world"
+
+[[edge_functions]]
+  path = "/edge/*"
+  function = "rewrite"
